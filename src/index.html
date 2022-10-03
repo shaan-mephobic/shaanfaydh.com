@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shaan Faydh</title>
+    <link rel="icon" href="images/signature.png" media="(prefers-color-scheme:no-preference)">
+    <link rel="icon" href="images/signature-white.png" media="(prefers-color-scheme:dark)">
+    <link rel="icon" href="images/signature.png" media="(prefers-color-scheme:light)">
+    <meta property="og:image" content="images/pexels-david-selbert-6468238.jpg">
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:title" content="Shaan Faydh" />
+    <meta property="og:description" content="I have chased butterflies, now I am after the storm." />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if (!window.matchMedia)
+                return;
+
+            var current = $('head > link[rel="icon"][media]');
+            $.each(current, function (i, icon) {
+                var match = window.matchMedia(icon.media);
+                function swap() {
+                    if (match.matches) {
+                        current.remove();
+                        current = $(icon).appendTo('head');
+                    }
+                }
+                match.addListener(swap);
+                swap();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <canvas class="webgl">
+    </canvas>
+    <div class="content-column">
+        <div class="hero">
+            <div class="signature" onClick="window.location.reload();"></div>
+            <div class="content">
+                <h1 style="margin-top:0;">SURREAL</h1>
+                <div style="width:35vw;">
+                    <p>
+                        The Universe feeds on mediocrity. It revolves around no one. Feel the rhythm, feel
+                        the waves settle and align in this chaos. You are a legacy of 13.8 billion years of chaos.
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="hero" style="top:150%">
+        <section class="gradient">
+            <h1
+                style="width:50vw; text-align: center;margin-top:0; position: absolute; left: 50%;   transform: translateX(-50%); top:0px;letter-spacing: 0px; font-size: 35px;">
+                “What makes me A Me?”</h1>
+            <div class="column">
+                <div class="card" onclick='openTab("https://github.com/shaan-mephobic/")' data-tilt data-tilt-glare
+                    data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+                    <img style="width:85px" src="images/GitHub.png" draggable="false" (dragstart)="false;"
+                        alt="Phoenix">
+                </div>
+                <div style="padding:30px"></div>
+
+                <div class="card" onclick='openTab("https://stackoverflow.com/users/14595863/shaan-mephobic")' data-tilt
+                    data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+                    <img src="images/stackoverflow.png" draggable="false" (dragstart)="false;" alt="StackOverFlow">
+                </div>
+            </div>
+
+            <div class="scrolls">
+                <div class="scrolling-column">
+                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+                        <h2 style="color: white; ">???????</h2>
+                    </div>
+
+
+                    <div class="card" onclick='openTab("https://www.linkedin.com/in/shaan-f-7b4b431b2/")'
+                        style="background:#185582" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                        data-tilt-scale="1.1">
+                        <img src="images/linkedin.png" draggable="false" (dragstart)="false;" alt="Linkedin">
+                    </div>
+
+                    <div class="card" style="background:#070707"
+                        onclick='openTab("https://play.google.com/store/apps/details?id=com.Phoenix.project")' data-tilt
+                        data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+                        <img src="images/another.png" draggable="false" (dragstart)="false;" (dragstart)="false;"
+                            alt="Phoenix">
+                    </div>
+
+
+                    <div class="card" style="background:#c51616" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                        data-tilt-scale="1.1">
+                        <img src="images/sako.png" draggable="false" (dragstart)="false;" alt="SaKo">
+                    </div>
+
+
+                    <div class="card" style="background:#131313" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                        data-tilt-scale="1.1">
+                        <img style="width:92.3px; height:106px;     background-size: cover;
+                        background-position: center;" src="images/beat.png" draggable="false" (dragstart)="false;"
+                            alt="Beat">
+                    </div>
+                    <script>
+                        function openTab(url) {
+                            window.open(url, '_blank');
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+        <div style="padding: 10vh;"></div>
+        <div class="overflowglass">
+            <h4>one and level sands stretch far away. The lone and level sands stretch far away. The lone and level
+                sands stretch far away. The lone and level sands stretch far away.
+            </h4>
+        </div>
+    </div>
+
+    <div class="hero" style="top:250%">
+        <div class="content3">
+            <p style="font-weight:500; font-size: 25px;">“I have spread my dreams under your feet;<br>
+                Tread softly.”</p>
+        </div>
+
+        <div class="content4">
+            <h6 style="margin-top: 0; margin-bottom: 0; font-family: Space Mono; font-weight: 700; font-size: 17px;">
+                i
+                feel
+                a storm coming.
+            </h6>
+
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="17" stroke="#ED111133" stroke-width="3" fill="transparent" />
+                <svg height="100" width="100" class="blinking">
+                    <circle cx="50" cy="50" r="8" fill="#ED1111" />
+                </svg>
+                <svg height="100" width="100">
+                    <circle cx="50" cy="50" r="20.5" stroke="#FFFFFF0D" stroke-width="1" fill="transparent" />
+                </svg>
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>
