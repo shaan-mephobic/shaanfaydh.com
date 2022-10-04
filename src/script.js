@@ -42,6 +42,7 @@ let defaultSpeed = true;
 let geometry = null
 let material = null
 let points = null
+let scrollY = window.scrollY
 
 
 function generateStars() {
@@ -104,8 +105,6 @@ function generateStars() {
 
 generateStars()
 
-let scrollY = window.scrollY
-
 /**
  * Sizes
  */
@@ -114,7 +113,6 @@ const sizes = {
     height: window.innerHeight * 3.5 + 130
 }
 
-//  issues on resize on brave android
 window.addEventListener('resize', () => {
 
     // Update sizes
@@ -127,7 +125,7 @@ window.addEventListener('resize', () => {
 
     // Update renderer
     renderer.setSize(sizes.width, sizes.height)
-    // renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    renderer.setPixelRatio(window.innerWidth / window.innerHeight)
 })
 
 /**
@@ -153,7 +151,7 @@ const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 })
 renderer.setSize(sizes.width, sizes.height)
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+renderer.setPixelRatio(window.innerWidth / window.innerHeight)
 
 /**
  * Animate
