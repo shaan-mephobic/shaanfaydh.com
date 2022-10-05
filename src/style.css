@@ -183,9 +183,11 @@ h3:hover {
 
 h6 {
     color: white;
-    font-family: "Raleway";
-    font-size: 20px;
-    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 17px;
 }
 
 p {
@@ -271,13 +273,14 @@ strong {
     border-bottom: 1px solid rgba(255, 255, 255, 0.125);
     border-top: 2px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .overflowglass h4 {
     margin: 15px 0px 15px 0px;
-    color: black;
+    color: white;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     max-lines: 1;
     text-overflow: clip;
     overflow: hidden;
